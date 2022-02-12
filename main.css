@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+}
+
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+
+.banner{
+    background-color: #191919;
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#divLogued{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D4263;
+    color: white;
+}
+
+
+
+.div_nav{
+    background-color: #2D4263;
+    margin: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 1%;
+    padding: 5px;
+    box-shadow: 0 7px 4px 0 rgba(0,0,0,.2);
+}
+
+.div_nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_nav ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 0;
+
+}
+
+.div_nav li li a{
+    text-decoration: none;
+    color: white
+
+}
+
+.banner h1{
+    color: white;
+    font-size: 7vw;
+}
+
+.banner_logo{
+    height: 100px;
+}
+
+
+
+#carrito_div{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-right: 50px;
+    right: -50px;
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.car_titu{
+    text-align: center;
+    font-size: 50px;
+}
+
+.car_produ{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.car_produ img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.car_num{
+    color: white;
+    font-size: 30px;
+}
+
+.borrar{
+    width: 20px;
+    height: 20px;
+}
+
+#invis{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_zap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.zaprecio{
+    margin-left: 71%
+}
+
+.galImg{
+    width: 100%;
+}
+
+#creado{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#hombzapas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#mujzapas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#ninzapas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+.divZap{
+    background-color: #191919;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.divZap i{
+    color: #2D4263;
+}
+
+.divZap img{
+    width: 250px;
+}
+
+.icos{
+    margin-right: 30px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 70px;
+    margin-top: 75px;
+
+}
+
+.foot_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.foot_mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px
+    
+
+}
+
+#foot_scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+}
+
+/* Animaciones */
+
+
+.linkZap{
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+  }
+
+.linkZap:hover {
+	transform: scale(1.10);
+}
+
+.linkZap:hover .hoverZap{
+    opacity: 1;
+}
+
+.linkZap:hover .hovercart{
+    opacity: 0.5;
+
+}
+
+.linkZap:active {
+	transform: scale(0.9);
+}
+
+.hoverZap{
+    color: black;
+    position: relative;
+    font-size: 25px;
+    top: 155px;
+    left: 70px;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+
+
+.nav_li{
+    padding-bottom: 1px;
+    color: white;
+    position: relative;
+}
+
+.nav_li::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    background: white;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav_li:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.formLogin input, textarea{
+    width: 100%;
+    border: 0;
+    padding: 10px 5px;
+    background: white no-repeat;
+
+    background-image: linear-gradient(to bottom, #0f12be, #0f12be), linear-gradient(to bottom, silver, silver);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    font-family: sans-serif
+
+  }
+
+  .formLogin input:focus, textarea:focus{
+    background-size: 100% 2px, 100% 1px;
+	outline: none;
+  }
+
+
+input[type="submit"] {
+    border: 1px solid #0f12be;
+    background-color: transparent;
+    color: #0f12be;
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    text-transform: capitalize;
+
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+input.btnLogin {
+    background-image: linear-gradient(0, #0f12be, #0f12be);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+}
+
+input.btnLogin:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+
+
+
+
+/* LOGIN */
+  .bodLogin{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      background-color: #f2f2f2;
+  }
+
+  .bodReg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #f2f2f2;
+
+  }
+
+  .bodLogin a{
+      color: #0f12be;
+  }
+
+  .bodReg a{
+    color: #0f12be;
+  }
+
+  .spanBack{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .divLog{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 77px 55px 33px 55px;
+    margin: 25px;
+    box-shadow: 0 7px 4px 7px rgba(0,0,0,.2);
+  }
+
+  .divReg{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 77px 55px 33px 55px;
+    margin: 25px;
+    box-shadow: 0 7px 4px 7px rgba(0,0,0,.2);
+
+  }
+
+  .formLogin{
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+  }
+
+
+
+  .tituLog{
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  .inputLogin{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      
+  }
+
+  .inputsLogin{
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    
+  }
+
+  .regisDiv{
+      text-align: center;
+      margin-top: 20px;
+  }
+
+
+
+@media (max-width:320px){
+    .bodLogin{
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .divLog{
+        width: 170px;
+        height: 460px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .divReg{
+        height: 770px;
+        transform: scale(0.9);
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+    .galImg{
+        display: none;
+    }
+
+}
+
