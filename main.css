@@ -65,7 +65,7 @@ a{
 
 .banner h1{
     color: white;
-    font-size: 7vw;
+    font-size: 6vw;
 }
 
 .banner_logo{
@@ -116,9 +116,21 @@ a{
     font-size: 30px;
 }
 
+#precioTot{
+    font-size: 30px;
+}
+
 .borrar{
     width: 20px;
     height: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 35px;
+    cursor: pointer;
 }
 
 #invis{
@@ -178,6 +190,7 @@ a{
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
+    box-shadow: 0 7px 4px 4px rgba(0,0,0,.2)
 }
 
 .divZap i{
@@ -220,6 +233,27 @@ footer{
     margin: 5px
     
 
+}
+
+.foot_log{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 70px;
+    margin-top: 75px;
+
+}
+
+.foot_mid_log{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -40px;
+}
+
+.foot_mid_log a{
+    color: #0f12be;
 }
 
 #foot_scroll{
@@ -469,6 +503,43 @@ input.btnLogin:hover {
 
     .galImg{
         display: none;
+    }
+
+}
+
+@media (max-width:425px){
+
+    #carrito_div{
+        width: 200px;
+    }
+
+    .banner{
+        height: 70px;
+    }
+
+    .banner_logo{
+        height: 70px;
+    }
+
+    .div_carr_ico{
+        display: flex;
+
+    }
+
+    .divIcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #carrito_div{
+        top: 70px;
+        width: 275px;
+    }
+
+    .divIcon i{
+        font-size: 7vw;
     }
 
 }
