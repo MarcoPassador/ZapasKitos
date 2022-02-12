@@ -102,13 +102,17 @@ a{
     margin: 15px;
     background-color: black;
     border-radius: 10px;
-    width: 100%;
+    width: 320px;
 
 }
 
 .car_produ img{
     width: 100px;
     border-radius: 10px;
+}
+
+.produ_text{
+    width: 170px;
 }
 
 .car_num{
@@ -149,6 +153,10 @@ a{
 
 .zaprecio{
     margin-left: 71%
+}
+
+.zanombre{
+    width: 170px;
 }
 
 .galImg{

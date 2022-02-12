@@ -1,5 +1,5 @@
 
-
+// Carrito
     $(".linkZap").on("click", function(){
         $("carrito_div").slideDown();
         
@@ -10,7 +10,7 @@
         $("#car_products").append(`
             <div class = "car_produ">
                 <img src="${img}" alt="">
-                <div>
+                <div class="produ_text">
                     <h3>${nombre}</h3>
                     <span class="precioCar">$${precio}</span>
                 </div>
@@ -50,7 +50,7 @@
 
 
 
-
+// Bienvenida Log In
 
 if (localStorage.getItem("logueado") === "true"){
     $("#logued").append(`Bienvenido ${localStorage.getItem("nomUsReg")}`);

@@ -24,8 +24,8 @@ let listaZapatillas = [
         sexo : "Hombre"
     },
     {
-        nombre : "Chuck Taylor All Star 0X",
-        marca : "Converse",
+        nombre : "Caven",
+        marca : "Puma",
         precio : 4000,
         imagen : "zapa4.jpg",
         sexo : "Hombre"
@@ -153,6 +153,8 @@ let listaZapatillas = [
 
 ]
 
+// Listas de zapatillas
+
 let listaHombres = listaZapatillas.filter(el => el.sexo == "Hombre");
 
 let listaMujeres = listaZapatillas.filter (el => el.sexo == "Mujer");
@@ -160,7 +162,7 @@ let listaMujeres = listaZapatillas.filter (el => el.sexo == "Mujer");
 let listaNines = listaZapatillas.filter(el => el.sexo == "Nine");
 
 
-
+// Zapatillas pagina principal
 
 listaZapatillas.forEach(zapatilla  => {
     let nodo = document.createElement("a");
