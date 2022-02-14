@@ -1,7 +1,9 @@
 
 // Carrito
-    $(".linkZap").on("click", function(){
-        $("carrito_div").slideDown();
+
+
+    $(".linkZap").on("click", function(e){
+        e.preventDefault();
         
         let nombre = $(this).find("h4").text();
         let precio = parseFloat($(this).find("span").text().substring(1));
@@ -14,7 +16,6 @@
                     <h3>${nombre}</h3>
                     <span class="precioCar">$${precio}</span>
                 </div>
-                
                 <button class="borrar">X</button>
             
             </div>
@@ -43,11 +44,6 @@
 
         $("#precioTot").text(`Precio Total: $${precioTotal}`)
     }
-    
-
-
-
-
 
 
 // Bienvenida Log In
@@ -58,9 +54,6 @@ if (localStorage.getItem("logueado") === "true"){
 }else{
     $("#divLogued").attr("display", "none");
 }
-
-
-
 
 
 // Animaciones
@@ -78,24 +71,3 @@ $("#carrito_div").hide();
 $("#carrito").on("click", () =>{
     $("#carrito_div").slideToggle("slow");
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
